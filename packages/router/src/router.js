@@ -2,7 +2,7 @@
 import PropTypes from 'prop-types'
 
 import {
-  Location,
+  LocationProvider,
   parseSearch,
   replaceParams,
   matchPath,
@@ -48,9 +48,9 @@ const PrivatePageLoader = ({ useAuth, unauthenticatedRoute, children }) => {
 }
 
 const Router = (props) => (
-  <Location>
+  <LocationProvider>
     {(locationContext) => <RouterImpl {...locationContext} {...props} />}
-  </Location>
+  </LocationProvider>
 )
 
 /**

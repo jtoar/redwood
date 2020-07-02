@@ -33,21 +33,9 @@ class LocationProvider extends React.Component {
   }
 }
 
-const Location = ({ children }) => (
-  <LocationContext.Consumer>
-    {(context) =>
-      context ? (
-        children(context)
-      ) : (
-        <LocationProvider>{children}</LocationProvider>
-      )
-    }
-  </LocationContext.Consumer>
-)
-
 const useLocation = () => {
   const location = React.useContext(LocationContext)
   return location
 }
 
-export { Location, LocationProvider, LocationContext, useLocation }
+export { LocationProvider, LocationContext, useLocation }
