@@ -22,7 +22,7 @@
     "@babel/preset-env": "7.14.4",
     "@babel/preset-react": "7.13.13",
     "@babel/preset-typescript": "7.13.0",
-    "@babel/runtime-corejs3": "7.14.0",
+    "@babel/runtime-corejs3": "7.14.7",
     "@pmmmwh/react-refresh-webpack-plugin": "0.4.3",
     "@redwoodjs/cli": "^0.33.2",
     "@redwoodjs/dev-server": "^0.33.2",
